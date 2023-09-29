@@ -70,7 +70,7 @@ transform: scale(1.1);
 }
 
 .year{
-    font-size: 17vw;
+    font-size: 8vw;
     letter-spacing: 1vw;
 
 }
@@ -185,8 +185,7 @@ li {
 
 
   /* ...............word annimation..................... */
-  @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
-
+  
 .word {
   font-family: 'Anton', sans-serif;
   perspective: 100px; 
@@ -291,4 +290,31 @@ li {
   90% {
     transform: translateY(-48vh) scaleY(4);
   }
+}
+
+.word span:nth-child(6).active {
+  animation: bottomlong 1.5s linear;
+}
+
+@keyframes bottomlong {
+  15%, 52% {
+    transform: translateX(44vh) scaleY(1);
+  }
+  
+  85% {
+    transform: translateX(
+        
+    44vh) scaleY(3);
+  }
+}
+
+
+/* ...........year annimation..... */
+
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+.year h1 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  color: transparent;
+  -webkit-background-clip: text; 
+  text-transform: uppercase;
 }
